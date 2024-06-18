@@ -30,6 +30,8 @@
         };
     };
 
+
+
     combos {
         compatible = "zmk,combos";
 
@@ -47,8 +49,28 @@
             bindings = <&kp LC(V)>;
             key-positions = <23 24>;
         };
-    };
 
+        Lshift {
+            bindings = <&kt LEFT_SHIFT>;
+            key-positions = <10 11>;
+        };
+
+        LAltSticky {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <11 12>;
+        };
+
+        LCtrlToggle {
+            bindings = <&kt LCTRL>;
+            key-positions = <12 13>;
+        };
+        
+        LGUItoggle {
+            bindings = <&kt LEFT_GUI>;
+            key-positions = <13 14>;
+        };
+    };
+    
     keymap {
         compatible = "zmk,keymap";
         default_layer {
